@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "esnext",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"]
+    },
     "moduleResolution": "node",
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,5 +19,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "exclude": ["node_modules", "renderer/next.config.js", "app", "dist"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "next.config.js", "dist"]
 }

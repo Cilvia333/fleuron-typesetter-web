@@ -15,7 +15,7 @@
       "module-resolver",         //  apply babel-plugin-module-resolver
       {
         alias: {
-          "~": "./renderer"
+          "~": "./src"
         },
       },
     ],

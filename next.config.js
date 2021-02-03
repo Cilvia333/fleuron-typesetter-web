@@ -10,8 +10,6 @@ module.exports = {
       },
     });
 
-    return Object.assign(config, {
-      target: 'electron-renderer',
-    });
+    return config;
   },
 };

@@ -6,4 +6,3 @@ dist
 app
 node_modules
 .vscode
-renderer/.next

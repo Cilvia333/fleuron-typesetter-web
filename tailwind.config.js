@@ -4,11 +4,11 @@ module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     content: [
-      'renderer/**/*.css',
-      'renderer/**/*.js',
-      'renderer/**/*.ts',
-      'renderer/**/*.jsx',
-      'renderer/**/*.tsx',
+      'src/**/*.css',
+      'src/**/*.js',
+      'src/**/*.ts',
+      'src/**/*.jsx',
+      'src/**/*.tsx',
     ],
   },
   theme: {

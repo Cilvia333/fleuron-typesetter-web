@@ -27,8 +27,6 @@ const Home: React.FC = () => {
       return;
     }
 
-    console.log('hoge');
-
     if (destination.droppableId === 'editorDroppable') {
       if (editorCtx.currentDraggingState.selectedFleuron) {
         console.log(editorCtx.currentDraggingState.position);
@@ -87,7 +85,7 @@ const ToolBarWrapper = styled.div`
   height: 128px;
 
   &::before {
-    ${tw`w-full h-2 bg-darkGray absolute z-10`}
+    ${tw`w-full h-2 bg-black absolute z-10`}
 
     content: "";
     top: 0;

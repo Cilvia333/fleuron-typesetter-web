@@ -61,9 +61,6 @@
         "import/resolver": {
           "typescript": {
             "alwaysTryTypes": true,
-            "project": [
-              "renderer/tsconfig.json"
-            ]
           }
         }
       },

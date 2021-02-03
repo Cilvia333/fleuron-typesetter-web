@@ -6,17 +6,14 @@
   "author": "Cilvia333 <cilvia333x@gmail.com>",
   "main": "app/background.js",
   "scripts": {
-    "dev": "nextron",
-    "build": "nextron build",
-    "build:mac": "nextron build --mac --x64",
-    "build:win": "nextron build --win --x64",
-    "postinstall": "electron-builder install-app-deps",
+    "dev": "next",
+    "build": "next build",
     "fmt": "run-s fmt:*",
     "fmt:prettier": "yarn lint:prettier --write",
     "fmt:eslint": "yarn lint:eslint --fix",
     "lint": "run-s lint:*",
     "lint:prettier": "prettier \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint:eslint": "eslint renderer --ext .ts,.tsx,.js,.jsx"
+    "lint:eslint": "eslint src --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
